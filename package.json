@@ -8,8 +8,7 @@
     "dev": "nodemon index.js",
     "lint": "eslint \"src/**\"",
     "lint:fix": "eslint \"src/**\" --fix",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "git push dokku master"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Taras Rodynenko (t.rodynenko@gmail.com)",
   "license": "MIT",
