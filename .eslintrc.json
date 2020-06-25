@@ -1,0 +1,25 @@
+{
+	"env": {
+		"commonjs": true,
+		"es6": true,
+		"node": true
+	},
+	"extends": [
+		"node",
+		"plugin:prettier/recommended"
+	],
+	"parserOptions": {
+		"ecmaVersion": 2018
+	},
+	"rules": {
+		"no-invalid-this": 0,
+		"import/no-commonjs": 0,
+		"indent": [
+			"error",
+			"tab",
+			{
+				"SwitchCase": 1
+			}
+		]
+	}
+}

@@ -1,0 +1,45 @@
+{
+  "name": "telegram-bot-template",
+  "version": "1.0.0",
+  "description": "Telegram bot's template, based on Telegraf ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "lint": "eslint \"src/**\"",
+    "lint:fix": "eslint \"src/**\" --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "git push dokku master"
+  },
+  "author": "Taras Rodynenko (t.rodynenko@gmail.com)",
+  "license": "MIT",
+  "dependencies": {
+    "config": "^3.3.1",
+    "dotenv": "^8.2.0",
+    "js-yaml": "^3.14.0",
+    "mongoose": "^5.9.20",
+    "nanoid": "^3.1.10",
+    "telegraf": "^3.38.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.3.1",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "post-commit": "git push"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "npm run lint:fix"
+    ]
+  }
+}
