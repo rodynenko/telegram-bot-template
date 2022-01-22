@@ -17,7 +17,7 @@
     "dotenv": "^8.2.0",
     "js-yaml": "^3.14.1",
     "mongoose": "^5.11.7",
-    "nanoid": "^3.1.20",
+    "nanoid": "^3.1.31",
     "telegraf": "^3.38.0"
   },
   "devDependencies": {
